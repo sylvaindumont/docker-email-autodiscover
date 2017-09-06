@@ -1,5 +1,7 @@
 # docker-email-autodiscover
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/jsmitsnl/docker-email-autodiscover.svg)](https://hub.docker.com/r/jsmitsnl/docker-email-autodiscover/) [![Docker layers](https://images.microbadger.com/badges/image/jsmitsnl/docker-email-autodiscover.svg)](https://microbadger.com/images/jsmitsnl/docker-email-autodiscover) [![Github Stars](https://img.shields.io/github/stars/johansmitsnl/docker-email-autodiscover.svg?label=github%20%E2%98%85)](https://github.com/johansmitsnl/docker-email-autodiscover/) [![Github Stars](https://img.shields.io/github/contributors/johansmitsnl/docker-email-autodiscover.svg)](https://github.com/johansmitsnl/docker-email-autodiscover/) [![Github Forks](https://img.shields.io/github/forks/johansmitsnl/docker-email-autodiscover.svg?label=github%20forks)](https://github.com/johansmitsnl/docker-email-autodiscover/)
+
 This service is created to autodiscover your provider email settings.
 The service is kept simple and listens only on port 80. To enable ssl certificates use jwilder/nginx-proxy.
 
