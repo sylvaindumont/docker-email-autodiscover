@@ -90,8 +90,6 @@ services:
     - SMTP_HOST=smtp.domain.com
     - SMTP_PORT=587
     - VIRTUAL_HOST=autoconfig.domain.com,autodiscover.domain.com
-    - VIRTUAL_PORT=443
-    - VIRTUAL_PROTO=https
     - LETSENCRYPT_HOST=autoconfig.domain.com,autodiscover.domain.com
     - LETSENCRYPT_EMAIL=support@domain.com
 
