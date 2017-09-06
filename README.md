@@ -54,6 +54,7 @@ services:
     hostname: autodiscover
     domainname: domain.com
     container_name: autodiscover
+    restart: always
     ports:
     - "80:80"
     environment:
@@ -77,6 +78,7 @@ services:
     hostname: autodiscover
     domainname: domain.com
     container_name: autodiscover
+    restart: always
     links:
     - nginx_proxy
     environment:
