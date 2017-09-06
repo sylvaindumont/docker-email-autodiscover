@@ -22,7 +22,7 @@ autodiscover            IN      CNAME   www
 @                       IN      MX 10   {{$MX_DOMAIN}}.
 @                       IN      TXT     "mailconf=https://autoconfig.{{$DOMAIN}}/mail/config-v1.1.xml"
 _imaps._tcp             SRV 0 1 993     {{$MX_DOMAIN}}.
-_submission._tcp        SRV 0 1 465     {{$MX_DOMAIN}}.
+_submission._tcp        SRV 0 1 587     {{$MX_DOMAIN}}.
 _autodiscover._tcp      SRV 0 0 443     autodiscover.{{$DOMAIN}}.
 ```
 
