@@ -77,8 +77,8 @@ services:
     hostname: autodiscover
     domainname: domain.com
     container_name: autodiscover
-    ports:
-    - "80:80"
+    links:
+    - nginx_proxy
     environment:
     - COMPANY_NAME=my company
     - SUPPORT_URL=https://support.domain.com
