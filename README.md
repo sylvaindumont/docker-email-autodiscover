@@ -22,7 +22,7 @@ autodiscover            IN      CNAME   www
 @                       IN      MX 10   {{$MX_DOMAIN}}.
 @                       IN      TXT     "mailconf=https://autoconfig.{{$DOMAIN}}/mail/config-v1.1.xml"
 _imaps._tcp             SRV 0 1 993     {{$MX_DOMAIN}}.
-_submission._tcp        SRV 0 1 587     {{$MX_DOMAIN}}.
+_submission._tcp        SRV 0 1 465     {{$MX_DOMAIN}}.
 _autodiscover._tcp      SRV 0 0 443     autodiscover.{{$DOMAIN}}.
 ```
 
@@ -66,7 +66,7 @@ services:
     - IMAP_HOST=imap.domain.com
     - IMAP_PORT=993
     - SMTP_HOST=smtp.domain.com
-    - SMTP_PORT=587
+    - SMTP_PORT=465
 ```
 
 __ssl support with jwilder__:
@@ -90,7 +90,7 @@ services:
     - IMAP_HOST=imap.domain.com
     - IMAP_PORT=993
     - SMTP_HOST=smtp.domain.com
-    - SMTP_PORT=587
+    - SMTP_PORT=465
     - VIRTUAL_HOST=autoconfig.domain.com,autodiscover.domain.com
     - LETSENCRYPT_HOST=autoconfig.domain.com,autodiscover.domain.com
     - LETSENCRYPT_EMAIL=support@domain.com
